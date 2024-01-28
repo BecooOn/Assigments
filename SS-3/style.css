@@ -172,6 +172,19 @@ font-family: 'Rubik Burned', system-ui; */
 .main .img:hover h3 {
   z-index: 1;
 }
+.img1 audio {
+  position: absolute;
+  top: 100%;
+  /* right: 1px; */
+  z-index: -1;
+}
+#audio_play {
+  width: 100%;
+}
+#audio_play:hover {
+  /* width: 50%; */
+  z-index: 20;
+}
 
 .img1 h3:hover {
   scale: 2;

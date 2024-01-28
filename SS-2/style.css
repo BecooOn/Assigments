@@ -11,11 +11,23 @@ font-family: 'Rubik Burned', system-ui; */
 }
 body {
   background-color: #7d5fff;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
 
 /* -------------------------------------------- */
 /*                    HEADER                    */
 /* -------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: lightblue;
+  }
+}
 header {
   /* background-color: #ffaf40; */
   background-image: linear-gradient(to bottom, #00ffff, #7d5fff);
@@ -46,6 +58,7 @@ header .h1 {
   animation: shake 0.7s;
   scale: 1.3;
   box-shadow: 7px 7px 14px black;
+  z-index: 2;
 }
 
 @keyframes shake {
@@ -66,6 +79,11 @@ header .h1 {
 /* -------------------------------------------- */
 /*                    NAVBAR                    */
 /* -------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  nav {
+    background-color: lightblue;
+  }
+}
 .nav {
   background-color: #7d5fff;
   position: fixed;
@@ -160,7 +178,11 @@ header .h1 {
 /* -------------------------------------------- */
 /*                     MAIN                     */
 /* -------------------------------------------- */
-
+@media only screen and (max-width: 600px) {
+  main {
+    background-color: lightblue;
+  }
+}
 .main {
   background-color: aqua;
   font-size: 1.5rem;
@@ -170,14 +192,33 @@ header .h1 {
   display: flex;
   align-items: center;
 }
-main img {
-  width: 200px;
+.sword_man {
+  width: 40%;
+  /* padding: 3rem 0; */
+  padding-right: 3rem;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+main .sword_man img {
+  width: 35%;
   transform: scaleX(-1);
+}
+.main_h3 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* -------------------------------------------- */
 /*                    SECTION                   */
 /* -------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  section {
+    background-color: lightblue;
+  }
+}
 .section {
   /* background-color: #131e25; */
   /* color: white; */
@@ -212,6 +253,11 @@ main img {
 /* -------------------------------------------- */
 /*                    FOOTER                    */
 /* -------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  footer {
+    background-color: lightblue;
+  }
+}
 .footer {
   background-color: #131e25;
   letter-spacing: 0.1rem;
@@ -301,6 +347,11 @@ main img {
   font-size: 1.2rem;
   background-color: red;
   color: blue;
+}
+
+footer .end_p {
+  text-align: center;
+  padding: 1rem;
 }
 
 /* -------------------------------------------- */

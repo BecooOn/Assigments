@@ -24,25 +24,28 @@ font-family: 'Rubik Burned', system-ui; */
     }
   } */
 
-
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+  body {
+    background-color: lightblue;
   }
+}
 
 /* -------------------------------------------- */
 /*                    HEADER                    */
 /* -------------------------------------------- */
 
 .carriage_head {
-  background-color:#FFA500;
+  background-image: linear-gradient(
+    to bottom,
+    orange,
+    rgba(115, 0, 255, 0.575)
+  );
   /* text-align: center; */
   /* padding: 2rem 0; */
 }
 
 .div_h1 {
-  background-color: ;
+  /* background-color: ; */
   /* border: 1px solid red; */
   text-align: center;
   padding: 1rem;
@@ -77,10 +80,10 @@ font-family: 'Rubik Burned', system-ui; */
     transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-3deg);
   }
   20% {
-    transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(3deg);
   }
   30% {
     transform: translate(3px, 2px) rotate(0deg);
@@ -92,23 +95,24 @@ font-family: 'Rubik Burned', system-ui; */
   /* border: 1px solid blue; */
   padding: 1rem;
   border-top: 2px solid black;
-
 }
 .unordered .list {
-  background-color: aqua;
+  /* background-image:linear-gradient(to bottom,rgba(115, 0, 255, 0.575) ) ; */
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 8rem;
   list-style-type: none;
   padding: 1rem;
 }
 
 .unordered .list li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border: 2px solid orange;
   /* background-color: orange; */
   box-shadow: 5px 5px 10px black;
@@ -129,8 +133,8 @@ font-family: 'Rubik Burned', system-ui; */
 /* -------------------------------------------- */
 /*                     MAIN                     */
 /* -------------------------------------------- */
-.main_foot{
-    background-image: linear-gradient(to bottom, rgb(185, 109, 9), white);
+.main_foot {
+  background-image: linear-gradient(to bottom, rgb(185, 109, 9), white);
 }
 .main {
   /* background-image: linear-gradient(to bottom, rgb(185, 109, 9), white); */
@@ -167,7 +171,6 @@ font-family: 'Rubik Burned', system-ui; */
 
 .main .img:hover h3 {
   z-index: 1;
-  
 }
 
 .img1 h3:hover {
@@ -191,14 +194,14 @@ font-family: 'Rubik Burned', system-ui; */
 /* -------------------------------------------- */
 /*                    FOOTER                    */
 /* -------------------------------------------- */
-footer{
-    /* border: 2px solid red; */
-    /* background-image: linear-gradient(to bottom,#FFFEFE, antiquewhite); */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    padding: 10rem 2rem 0;
+footer {
+  /* border: 2px solid red; */
+  /* background-image: linear-gradient(to bottom,#FFFEFE, antiquewhite); */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 10rem 2rem 0;
 }
 footer p {
   /* padding: 10rem 2rem 0.1rem; */
